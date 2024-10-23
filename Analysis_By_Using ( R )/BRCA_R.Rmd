@@ -1,0 +1,457 @@
+```{r}
+library(plotly)
+library(readr)
+library(dplyr)
+library(ggplot2)
+library(reshape2)
+library(lubridate)
+library(tidyr)
+library(dplyr)
+```
+```{r}
+df <- read_csv("E:\\Projects\\BreastCancer_Project\\Cleaning_SQL\\Cleaned_BRCA.csv",show_col_types=FALSE)
+```
+
+```{r}
+str(df)
+```
+```{r}
+summary(df)
+```
+```{r}
+df$Date_of_Last_Visit <- as.Date(df$Date_of_Last_Visit, format="%Y-%m-%d")
+df$Date_of_Surgery <- as.Date(df$Date_of_Surgery, format="%Y-%m-%d")
+df$Date_of_Last_Visit <- ymd(df$Date_of_Last_Visit)
+df$Date_of_Surgery <- ymd(df$Date_of_Surgery)
+```
+```{r}
+df$Date_of_Last_Visit[df$Date_of_Last_Visit == as.Date("1900-01-01")] <- 
+  df$Date_of_Surgery[df$Date_of_Last_Visit == as.Date("1900-01-01")]
+
+# 2. Calculate time difference in days
+df$Time_Difference <- as.numeric(difftime(df$Date_of_Last_Visit, df$Date_of_Surgery, units="days"))
+
+# 3. Replace specific dates
+df$Date_of_Last_Visit[df$Date_of_Last_Visit == as.Date("1900-01-01")] <- 
+  df$Date_of_Surgery[df$Date_of_Last_Visit == as.Date("1900-01-01")]
+
+# 2. Calculate time difference in days
+df$Time_Difference <- as.numeric(difftime(df$Date_of_Last_Visit, df$Date_of_Surgery, units="days"))
+
+# 3. Replace specific dates
+df$Date_of_Last_Visit[df$Date_of_Last_Visit == as.Date("2026-05-03")] <- as.Date("2018-05-03")
+df$Date_of_Last_Visit[df$Date_of_Last_Visit == as.Date("2026-09-24")] <- as.Date("2019-09-24")
+```
+```{r}
+df$Date_of_Last_Visit[df$Date_of_Last_Visit == as.Date("1900-01-01")] <- 
+  df$Date_of_Surgery[df$Date_of_Last_Visit == as.Date("1900-01-01")]
+
+# 2. Calculate time difference in days
+df$Time_Difference <- as.numeric(difftime(df$Date_of_Last_Visit, df$Date_of_Surgery, units="days"))
+
+# 3. Replace specific dates
+df$Date_of_Last_Visit[df$Date_of_Last_Visit == as.Date("2026-05-03")] <- as.Date("2018-05-03")
+df$Date_of_Last_Visit[df$Date_of_Last_Visit == as.Date("2026-09-24")] <- as.Date("2019-09-24")
+```
+```{r}
+df_co <- df[, c('Age', 'Protein1', 'Protein2', 'Protein3', 'Protein4', 'Tumor_Stage_Numeric')]
+cor_matrix <- cor(df_co, use = "complete.obs")
+melted_cor <- melt(cor_matrix)
+ggplot(data = melted_cor, aes(x=Var1, y=Var2, fill=value)) +
+  geom_tile(color = "white") +
+  scale_fill_gradient2(low = "white", high = "red", mid = "gray", midpoint = 0, limit = c(-1,1)) +
+  theme_minimal() +
+  labs(title="Correlation Heatmap", fill="Correlation") +
+  theme(axis.text.x = element_text(angle = 100, hjust = 1))
+```
+```{r}
+fig <- plot_ly(df, 
+               x = ~Age, 
+               color = ~Tumor_Stage_Numeric, 
+               type = "histogram",
+               colors = c("red", "blue", "green", "yellow", "purple", "orange")) # Adjust the color palette as needed
+
+# Add title and layout adjustments
+fig <- fig %>%
+  layout(title = "Distribution of Age by Tumor Stage",
+         xaxis = list(title = "Age"),
+         yaxis = list(title = "Count"))
+
+# Display the plot
+fig
+```
+```{r}
+# Create a summary table for counts by 'Year_of_Surgery' and 'Patient_Status'
+df_summary <- df %>%
+  group_by(Year_of_Surgery, Patient_Status) %>%
+  summarise(Count = n())
+
+# Create a grouped bar chart
+fig <- plot_ly(df_summary, 
+               x = ~Year_of_Surgery, 
+               y = ~Count, 
+               color = ~Patient_Status, 
+               type = "bar",
+               barmode = "group")  # Group bars by 'Patient_Status'
+
+# Add title and layout adjustments
+fig <- fig %>%
+  layout(title = "Year of Surgery by Patient Status",
+         xaxis = list(title = "Year of Surgery"),
+         yaxis = list(title = "Count"))
+
+# Display the plot
+fig
+
+
+```
+```{r}
+# Count the occurrences of each gender
+gender_counts <- df %>%
+  group_by(Gender) %>%
+  summarise(Count = n())  # Create a summary table with counts
+# Create a pie chart using plot_ly
+fig <- plot_ly(data = gender_counts, 
+               labels = ~Gender, 
+               values = ~Count, 
+               type = 'pie') %>%
+  layout(title = 'Distribution of Patients by Gender')
+
+# Display the plot
+fig
+
+```
+
+
+
+```{r}
+# Count occurrences of each Patient_Status
+patient_status_counts <- df %>%
+  group_by(Patient_Status) %>%
+  summarise(Count = n())  # Create a summary table with counts
+# Create a pie chart using plot_ly
+fig <- plot_ly(data = patient_status_counts, 
+               labels = ~Patient_Status, 
+               values = ~Count, 
+               type = 'pie') %>%
+  layout(title = 'Distribution of Patients by Status')
+
+# Display the plot
+fig
+
+```
+```{r}
+# Create the histogram using plot_ly
+fig <- plot_ly(df, 
+               x = ~Age, 
+               type = "histogram", 
+               histnorm = "count",  # This shows the count of patients
+               nbinsx = 10) %>%  # Specify the number of bins
+  layout(title = "Histogram of Average Age of Patients with Cancer",
+         xaxis = list(title = "Age"),
+         yaxis = list(title = "Number of Patients"))
+
+# Display the plot
+fig
+
+```
+```{r}
+fig <- plot_ly(df, 
+               x = ~Patient_Status, 
+               y = ~Histology, 
+               size = ~Tumor_Stage_Numeric, 
+               color = ~Tumour_Stage,
+               text = ~paste("Patient Status:", Patient_Status),  # Tooltip text
+               sizes = c(500, 1500),  # Specify the range for bubble sizes
+               type = "scatter", 
+               mode = "markers") %>%
+  layout(title = "Bubble Chart of Tumor Stage, Histology, and Patient Status",
+         xaxis = list(title = "Patient Status"),
+         yaxis = list(title = "Histology")) 
+
+# Display the plot
+fig
+```
+```{r}
+fig <- plot_ly(data = df, 
+               x = ~Patient_Status, 
+               color = ~`HER2 status`,  # Use backticks for column names with spaces
+               type = "histogram", 
+               barmode = "group") %>%
+  layout(title = "Patient Status vs HER2 Status",
+         xaxis = list(title = "Patient Status"),
+         yaxis = list(title = "Count"))
+
+# Display the plot
+fig
+```
+```{r}
+# Aggregate counts for each Surgery type and Patient Status
+agg_data <- as.data.frame(table(df$Surgery_type, df$Patient_Status))
+
+# Rename columns for clarity
+colnames(agg_data) <- c("Surgery_type", "Patient_Status", "Count")
+fig <- plot_ly(data = agg_data, 
+               x = ~Surgery_type, 
+               y = ~Count, 
+               color = ~Patient_Status, 
+               type = "bar", 
+               barmode = "stack") %>%
+  layout(title = "Stacked Bar Chart of Surgery Type and Patient Status",
+         xaxis = list(title = "Surgery Type"),
+         yaxis = list(title = "Count"))
+
+# Display the plot
+fig
+```
+
+```{r}
+year_surgery_counts <- df %>%
+  group_by(Year_of_Surgery) %>%
+  summarise(Patient_Count = n()) %>%
+  ungroup()
+
+# Create the line chart using plot_ly
+fig <- plot_ly(data = year_surgery_counts, 
+               x = ~Year_of_Surgery, 
+               y = ~Patient_Count, 
+               type = 'scatter', 
+               mode = 'lines+markers') %>%
+  layout(title = 'Number of Patients by Year of Surgery',
+         xaxis = list(title = 'Year of Surgery'),
+         yaxis = list(title = 'Number of Patients'))
+
+# Display the plot
+fig
+```
+```{r}
+fig <- plot_ly(data = df, 
+               x = ~Patient_Status, 
+               y = ~Time_Difference, 
+               color = ~Patient_Status, 
+               type = "box") %>%
+  layout(title = 'Difference Between Last Visit and Surgery by Patient Status',
+         xaxis = list(title = 'Patient Status'),
+         yaxis = list(title = 'Days Between Last Visit and Surgery'))
+
+# Display the plot
+fig
+```
+
+```{r}
+fig <- plot_ly(data = df, 
+               x = ~Surgery_type, 
+               color = ~Histology, 
+               type = "histogram", 
+               barmode = "group") %>%
+  layout(title = "Surgery Type vs Histology",
+         xaxis = list(title = "Surgery Type"),
+         yaxis = list(title = "Count"))
+
+# Display the plot
+fig
+```
+```{r}
+outcomes_by_surgery <- df %>%
+  group_by(Surgery_type, Patient_Status) %>%
+  summarise(Count = n(), .groups = 'drop') %>%
+  pivot_wider(names_from = Patient_Status, values_from = Count, values_fill = 0)
+
+# Calculate survival rate
+outcomes_by_surgery <- outcomes_by_surgery %>%
+  mutate(Survival_Rate = Alive / (Alive + Dead))
+
+# Create a pie chart to show survival rate by surgery type
+fig <- plot_ly(data = outcomes_by_surgery, 
+               labels = ~Surgery_type, 
+               values = ~Survival_Rate, 
+               type = 'pie') %>%
+  layout(title = "Effect of Surgery Type on Long-Term Patient Outcomes")
+
+# Display the plot
+fig
+```
+```{r}
+age_breaks <- c(0, 20, 40, 60, 80, 100)
+age_labels <- c("0-19", "20-39", "40-59", "60-79", "80+")
+
+# Create Age_Group column using cut()
+df <- df %>%
+  mutate(Age_Group = cut(Age, breaks = age_breaks, labels = age_labels, right = FALSE))
+
+# Create the stacked bar chart
+fig <- plot_ly(df, 
+               x = ~Age_Group, 
+               color = ~Surgery_type, 
+               type = "histogram", 
+               barmode = "stack") %>%
+  layout(title = "Stacked Bar Chart of Surgery Type and Age Group",
+         xaxis = list(title = "Age Group"),
+         yaxis = list(title = "Number of Patients"))
+
+# Show the plot
+fig
+```
+
+```{r}
+tumor_stage_counts <- df %>%
+  count(Tumour_Stage) %>%
+  arrange(desc(n))  # Sort by count
+
+# Get the most common tumor stage
+most_common_tumor_stage <- tumor_stage_counts %>%
+  filter(n == max(n))
+
+# Create a horizontal bar chart
+fig <- plot_ly(tumor_stage_counts, 
+               x = ~n, 
+               y = ~Tumour_Stage, 
+               type = "bar", 
+               orientation = 'h') %>%
+  layout(title = "Number of Cases by Tumor Stage at the Time of Diagnosis",
+         xaxis = list(title = "Number of Cases"),
+         yaxis = list(title = "Tumor Stage"))
+
+# Display the plot
+fig
+```
+```{r}
+df <- df %>%
+  mutate(Survival = ifelse(Patient_Status == 'Alive', 1, 0))
+
+# Calculate survival rate by tumor stage
+survival_rate_by_stage <- df %>%
+  group_by(Tumour_Stage) %>%
+  summarise(Survival = mean(Survival) * 100)  # Convert to percentage
+
+# Create a pie chart showing survival rate by tumor stage
+fig <- plot_ly(survival_rate_by_stage, 
+               labels = ~Tumour_Stage, 
+               values = ~Survival, 
+               type = 'pie') %>%
+  layout(title = "Survival Rate (%) Based on Tumor Stage at the Time of Surgery")
+
+# Display the plot
+fig
+```
+
+```{r}
+surgery_distribution <- df %>%
+  group_by(Tumour_Stage, Surgery_type) %>%
+  summarise(Count = n()) %>%
+  ungroup()
+
+# Create the grouped bar chart
+fig <- plot_ly(surgery_distribution, 
+               x = ~Tumour_Stage, 
+               y = ~Count, 
+               color = ~Surgery_type, 
+               type = 'bar',
+               text = ~paste("Count:", Count),  # Tooltip
+               barmode = 'group') %>%
+  layout(title = "Distribution of Surgery Types Across Different Tumor Stages",
+         xaxis = list(title = "Tumor Stage"),
+         yaxis = list(title = "Number of Cases"),
+         legend = list(title = list(text = "Surgery Type")))
+
+# Display the plot
+fig
+```
+
+```{r}
+lobular_carcinoma <- df %>%
+  filter(Histology == 'Infiltrating Lobular Carcinoma')
+
+# Calculate the number of survivors and total patients
+survived_count <- lobular_carcinoma %>%
+  filter(Patient_Status == 'Alive') %>%
+  nrow()
+
+total_count <- nrow(lobular_carcinoma)
+
+# Calculate survival rate (as a percentage)
+survival_rate <- if (total_count > 0) (survived_count / total_count) * 100 else 0
+
+# Create the pie chart
+fig <- plot_ly(
+  labels = c('Alive', 'Dead'),
+  values = c(survived_count, total_count - survived_count),
+  type = 'pie',
+  textinfo = 'label+percent',
+  marker = list(colors = c('#6ca0e0', '#f6a5a5'))
+) %>%
+  layout(title = 'Survival Rate of Patients with Infiltrating Lobular Carcinoma')
+
+# Display the plot
+fig
+```
+```{r}
+lobular_carcinoma <- df %>%
+  filter(Histology == "Infiltrating Lobular Carcinoma")
+
+surgery_counts <- lobular_carcinoma %>%
+  count(Surgery_type) %>%
+  arrange(desc(n))
+
+most_common_surgery <- surgery_counts %>%
+  slice(1)
+cat("Most common surgery type:", most_common_surgery$Surgery_type, "\n")
+
+survival_by_surgery <- lobular_carcinoma %>%
+  group_by(Surgery_type) %>%
+  summarise(Survival_Rate = mean(Patient_Status == "Alive") * 100)
+
+fig <- plot_ly(
+  data = survival_by_surgery,
+  x = ~Surgery_type,
+  y = ~Survival_Rate,
+  type = "bar",
+  text = ~round(Survival_Rate, 2),
+  textposition = 'outside',
+  marker = list(color = 'Pastel')
+) %>%
+  layout(
+    title = "Survival Rate Based on Surgery Type for Infiltrating Lobular Carcinoma",
+    xaxis = list(title = "Surgery Type"),
+    yaxis = list(title = "Survival Rate (%)")
+  )
+
+fig
+```
+```{r}
+surgery_counts_by_histology <- df %>%
+  group_by(Histology, Surgery_type) %>%
+  summarise(Count = n())
+
+# حساب معدل البقاء لكل نوع جراحة لكل نوع من الأنسجة
+survival_by_histology_surgery <- df %>%
+  group_by(Histology, Surgery_type) %>%
+  summarise(Survival_Rate = mean(Patient_Status == "Alive") * 100)
+
+# دمج البيانات
+combined_data <- surgery_counts_by_histology %>%
+  inner_join(survival_by_histology_surgery, by = c("Histology", "Surgery_type"))
+
+# إنشاء الرسم البياني باستخدام plotly
+fig <- plot_ly(
+  data = combined_data,
+  x = ~Surgery_type,
+  y = ~Survival_Rate,
+  type = 'scatter',
+  mode = 'markers',
+  size = ~Count,  # حجم النقاط بناءً على عدد الحالات
+  marker = list(sizemode = 'diameter', sizeref = 1, sizemin = 3),  # Adjust sizeref for smaller markers
+  color = ~Histology,
+  text = ~paste("Count:", Count)  # عرض عدد الحالات عند التمرير
+) %>%
+  layout(
+    title = 'Survival Rate Based on Surgery Type for Different Histology Types',
+    xaxis = list(title = 'Surgery Type'),
+    yaxis = list(title = 'Survival Rate (%)'),
+    showlegend = TRUE
+  )
+
+# عرض الرسم البياني
+fig
+```
+
