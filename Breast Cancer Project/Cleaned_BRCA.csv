@@ -1,0 +1,335 @@
+Patient_ID,Age,Gender,Protein1,Protein2,Protein3,Protein4,Tumour_Stage,Histology,ER status,PR status,HER2 status,Surgery_type,Date_of_Surgery,Date_of_Last_Visit,Patient_Status,Tumor_Stage_Numeric,Year_of_Surgery
+TCGA-D8-A1XD,36,FEMALE,.080,.426,.547,.274,III,Infiltrating Ductal Carcinoma,Positive,Positive,Negative,Modified Radical Mastectomy,2017-01-15,2017-06-19,Alive,3,2017
+TCGA-EW-A1OX,43,FEMALE,-.420,.578,.614,-.032,II,Mucinous Carcinoma,Positive,Positive,Negative,Lumpectomy,2017-04-26,2018-11-09,Dead,2,2017
+TCGA-A8-A079,69,FEMALE,.214,1.311,-.327,-.234,III,Infiltrating Ductal Carcinoma,Positive,Positive,Negative,Other,2017-09-08,2018-06-09,Alive,3,2017
+TCGA-D8-A1XR,56,FEMALE,.345,-.211,-.193,.124,II,Infiltrating Ductal Carcinoma,Positive,Positive,Negative,Modified Radical Mastectomy,2017-01-25,2017-07-12,Alive,2,2017
+TCGA-BH-A0BF,56,FEMALE,.222,1.907,.520,-.312,II,Infiltrating Ductal Carcinoma,Positive,Positive,Negative,Other,2017-05-06,2019-06-27,Dead,2,2017
+TCGA-AO-A1KQ,84,MALE,-.082,1.724,-.057,.043,III,Infiltrating Ductal Carcinoma,Positive,Positive,Negative,Modified Radical Mastectomy,2017-09-18,2021-11-15,Alive,3,2017
+TCGA-D8-A73X,53,FEMALE,-.070,1.418,-.361,.392,II,Infiltrating Ductal Carcinoma,Positive,Positive,Negative,Simple Mastectomy,2017-02-04,2018-02-07,Alive,2,2017
+TCGA-A7-A426,50,FEMALE,.672,1.279,-.321,-.112,III,Infiltrating Ductal Carcinoma,Positive,Positive,Negative,Simple Mastectomy,2017-05-16,1900-01-01,Unknown,3,2017
+TCGA-EW-A1P5,77,FEMALE,-.152,-.663,1.189,.217,II,Infiltrating Ductal Carcinoma,Positive,Positive,Negative,Modified Radical Mastectomy,2017-09-28,2018-09-28,Alive,2,2017
+TCGA-A8-A09A,40,FEMALE,-.566,1.267,-.293,.194,II,Infiltrating Lobular Carcinoma,Positive,Positive,Positive,Other,2017-02-14,2017-12-15,Alive,2,2017
+TCGA-S3-A6ZG,71,FEMALE,-.223,.506,-.349,-.835,II,Infiltrating Ductal Carcinoma,Positive,Positive,Negative,Lumpectomy,2017-05-26,2017-12-19,Alive,2,2017
+TCGA-BH-A0EA,72,FEMALE,-.373,.555,-.668,-.351,II,Infiltrating Ductal Carcinoma,Positive,Positive,Negative,Other,2017-10-08,2018-09-13,Dead,2,2017
+TCGA-AC-A8OR,75,FEMALE,.172,.030,-.159,.675,I,Infiltrating Lobular Carcinoma,Positive,Positive,Negative,Simple Mastectomy,2017-02-24,2017-04-05,Alive,1,2017
+TCGA-A2-A0ES,52,FEMALE,-1.683,.727,.057,-1.244,II,Infiltrating Ductal Carcinoma,Positive,Positive,Negative,Simple Mastectomy,2017-06-05,2020-03-02,Alive,2,2017
+TCGA-C8-A8HQ,53,FEMALE,.560,.823,-.535,.265,II,Mucinous Carcinoma,Positive,Positive,Negative,Modified Radical Mastectomy,2017-10-18,2020-04-28,Alive,2,2017
+TCGA-AO-A03V,41,FEMALE,.143,1.083,.211,.974,I,Infiltrating Lobular Carcinoma,Positive,Positive,Negative,Simple Mastectomy,2017-03-06,2019-08-09,Alive,1,2017
+TCGA-A2-A0D4,37,FEMALE,.295,1.363,.692,.410,II,Mucinous Carcinoma,Positive,Positive,Negative,Lumpectomy,2017-06-15,2018-10-24,Alive,2,2017
+TCGA-EW-A1PA,59,FEMALE,.198,1.072,-.205,.633,II,Infiltrating Ductal Carcinoma,Positive,Positive,Negative,Lumpectomy,2017-10-28,2018-07-22,Alive,2,2017
+TCGA-BH-A0DE,62,FEMALE,.105,.703,-.299,.601,II,Infiltrating Ductal Carcinoma,Positive,Positive,Negative,Other,2017-03-16,2019-10-20,Dead,2,2017
+TCGA-E2-A1B4,74,FEMALE,-.246,1.495,-.299,.659,III,Infiltrating Ductal Carcinoma,Positive,Positive,Negative,Lumpectomy,2017-06-25,2019-12-23,Alive,3,2017
+TCGA-AC-A3HN,87,FEMALE,-.087,1.111,-.567,1.224,II,Infiltrating Ductal Carcinoma,Positive,Positive,Negative,Simple Mastectomy,2017-11-07,2017-11-28,Alive,2,2017
+TCGA-A8-A095,45,FEMALE,-.595,-.341,.445,.753,I,Infiltrating Ductal Carcinoma,Positive,Positive,Negative,Other,2017-03-26,2020-09-23,Alive,1,2017
+TCGA-AN-A0FY,55,FEMALE,.331,.848,-.495,.117,I,Infiltrating Lobular Carcinoma,Positive,Positive,Negative,Modified Radical Mastectomy,2017-11-07,1900-01-01,Unknown,1,2017
+TCGA-A2-A4S0,77,FEMALE,-.299,-.161,.461,-.397,II,Infiltrating Ductal Carcinoma,Positive,Positive,Negative,Simple Mastectomy,2017-11-17,2018-08-15,Alive,2,2017
+TCGA-A7-A3J0,62,FEMALE,.542,1.793,-.566,-.017,II,Infiltrating Ductal Carcinoma,Positive,Positive,Negative,Lumpectomy,2017-04-05,2017-06-20,Alive,2,2017
+TCGA-AC-A62Y,79,FEMALE,-.036,.796,-.014,1.630,II,Mucinous Carcinoma,Positive,Positive,Positive,Modified Radical Mastectomy,2017-11-17,2018-01-11,Dead,2,2017
+TCGA-A7-A5ZW,47,FEMALE,.332,-.328,.003,1.166,II,Mucinous Carcinoma,Positive,Positive,Negative,Lumpectomy,2017-11-27,2018-04-10,Dead,2,2017
+TCGA-A2-A25C,50,FEMALE,-.062,1.612,-.474,-.044,II,Infiltrating Lobular Carcinoma,Positive,Positive,Negative,Simple Mastectomy,2017-04-15,2018-01-25,Alive,2,2017
+TCGA-D8-A1JC,59,FEMALE,-.330,1.435,-.608,-.351,III,Infiltrating Ductal Carcinoma,Positive,Positive,Negative,Modified Radical Mastectomy,2017-11-27,2018-05-24,Alive,3,2017
+TCGA-A7-A4SB,56,FEMALE,1.035,1.765,-.759,.975,III,Infiltrating Ductal Carcinoma,Positive,Positive,Positive,Lumpectomy,2017-12-07,2018-06-25,Alive,3,2017
+TCGA-AR-A24S,61,FEMALE,-.228,1.791,-.756,.740,I,Infiltrating Ductal Carcinoma,Positive,Positive,Negative,Other,2017-04-25,2022-06-26,Alive,1,2017
+TCGA-D8-A4Z1,68,FEMALE,.649,1.424,-.395,1.185,I,Infiltrating Ductal Carcinoma,Positive,Positive,Negative,Simple Mastectomy,2017-12-07,2018-07-18,Dead,1,2017
+TCGA-A7-A26J,49,FEMALE,-.281,.719,-.171,.547,II,Infiltrating Lobular Carcinoma,Positive,Positive,Negative,Simple Mastectomy,2017-12-17,2018-02-23,Alive,2,2017
+TCGA-AC-A5XS,74,FEMALE,.595,.949,-.498,.972,II,Infiltrating Ductal Carcinoma,Positive,Positive,Negative,Simple Mastectomy,2017-05-05,2017-06-21,Alive,2,2017
+TCGA-OL-A6VR,48,FEMALE,.232,1.213,.053,-.024,I,Infiltrating Lobular Carcinoma,Positive,Positive,Negative,Simple Mastectomy,2017-12-17,2020-04-13,Alive,1,2017
+TCGA-EW-A1PF,50,FEMALE,-.080,2.623,.050,-.039,I,Infiltrating Ductal Carcinoma,Positive,Positive,Negative,Other,2017-12-27,2018-05-16,Alive,1,2017
+TCGA-LL-A7SZ,49,FEMALE,.062,1.315,-.099,.754,II,Infiltrating Lobular Carcinoma,Positive,Positive,Negative,Other,2017-05-15,2017-11-01,Alive,2,2017
+TCGA-BH-A18K,46,FEMALE,-.552,2.084,.416,-.808,I,Infiltrating Ductal Carcinoma,Positive,Positive,Negative,Other,2017-12-27,2018-12-02,Dead,1,2017
+TCGA-AC-A3OD,68,FEMALE,-.350,1.374,-.244,.188,II,Infiltrating Ductal Carcinoma,Positive,Positive,Negative,Modified Radical Mastectomy,2018-01-06,2018-02-10,Alive,2,2018
+TCGA-BH-A8FY,87,FEMALE,.709,2.173,-.440,-.393,I,Infiltrating Ductal Carcinoma,Positive,Positive,Negative,Simple Mastectomy,2017-05-25,2018-01-15,Dead,1,2017
+TCGA-C8-A26Z,59,FEMALE,.280,.899,-.610,.534,II,Infiltrating Ductal Carcinoma,Positive,Positive,Negative,Other,2018-01-06,2018-01-10,Alive,2,2018
+TCGA-A2-A1G4,71,FEMALE,-.948,.741,-.258,-.213,III,Infiltrating Lobular Carcinoma,Positive,Positive,Negative,Modified Radical Mastectomy,2018-01-16,2019-01-23,Alive,3,2018
+TCGA-BH-A18F,50,FEMALE,.217,-.216,1.088,.154,II,Infiltrating Lobular Carcinoma,Positive,Positive,Negative,Other,2017-06-04,2018-02-27,Alive,2,2017
+TCGA-E2-A1IG,45,FEMALE,.425,1.263,-.720,-1.164,II,Infiltrating Ductal Carcinoma,Positive,Positive,Negative,Simple Mastectomy,2018-01-16,2020-02-10,Alive,2,2018
+TCGA-AC-A2B8,84,FEMALE,.150,1.492,-.932,-.023,II,Infiltrating Ductal Carcinoma,Positive,Positive,Negative,Simple Mastectomy,2018-01-26,2018-03-12,Dead,2,2018
+TCGA-BH-A0BT,56,FEMALE,-.229,1.310,-.591,.087,II,Infiltrating Ductal Carcinoma,Positive,Positive,Negative,Other,2017-06-14,2020-09-12,Alive,2,2017
+TCGA-AO-A125,72,FEMALE,-.423,.383,.417,-.088,II,Infiltrating Ductal Carcinoma,Positive,Positive,Negative,Simple Mastectomy,2018-01-26,2026-05-03,Dead,2,2018
+TCGA-A8-A07E,81,FEMALE,.824,1.853,-.802,-.794,II,Infiltrating Lobular Carcinoma,Positive,Positive,Negative,Other,2018-02-05,2019-10-06,Alive,2,2018
+TCGA-A8-A08A,89,FEMALE,-.250,-.351,-.100,.758,I,Infiltrating Ductal Carcinoma,Positive,Positive,Negative,Other,2017-06-24,2017-07-24,Alive,1,2017
+TCGA-A2-A0EX,46,FEMALE,.231,.877,.019,.863,II,Infiltrating Ductal Carcinoma,Positive,Positive,Positive,Lumpectomy,2018-02-05,2019-08-09,Alive,2,2018
+TCGA-A8-A093,61,FEMALE,-1.487,.349,-.662,.185,II,Infiltrating Ductal Carcinoma,Positive,Positive,Negative,Other,2018-02-15,2019-08-15,Alive,2,2018
+TCGA-E2-A1L6,44,FEMALE,.239,.453,.040,-.385,II,Infiltrating Ductal Carcinoma,Positive,Positive,Negative,Simple Mastectomy,2017-07-04,2021-02-05,Alive,2,2017
+TCGA-3C-AAAU,55,FEMALE,-.663,1.938,-.775,-.264,II,Infiltrating Lobular Carcinoma,Positive,Positive,Negative,Modified Radical Mastectomy,2018-02-15,2020-03-23,Alive,2,2018
+TCGA-E2-A1IL,78,FEMALE,.210,.687,.119,.614,II,Infiltrating Ductal Carcinoma,Positive,Positive,Negative,Lumpectomy,2018-02-25,2018-03-11,Alive,2,2018
+TCGA-A2-A0CO,85,FEMALE,.745,1.757,-1.006,-.062,II,Infiltrating Ductal Carcinoma,Positive,Positive,Positive,Modified Radical Mastectomy,2017-07-14,2018-08-27,Alive,2,2017
+TCGA-BH-A0E7,79,FEMALE,.730,1.576,-.161,-.255,II,Infiltrating Lobular Carcinoma,Positive,Positive,Negative,Other,2018-02-25,2020-10-15,Alive,2,2018
+TCGA-EW-A6SC,60,FEMALE,.212,1.527,-.409,.001,II,Infiltrating Lobular Carcinoma,Positive,Positive,Negative,Lumpectomy,2018-03-07,2020-10-14,Alive,2,2018
+TCGA-D8-A1X7,40,FEMALE,.512,.936,.165,-.533,II,Infiltrating Lobular Carcinoma,Positive,Positive,Negative,Simple Mastectomy,2017-07-24,2017-10-17,Alive,2,2017
+TCGA-D8-A1XM,57,FEMALE,.000,.207,-.161,.374,I,Infiltrating Ductal Carcinoma,Positive,Positive,Negative,Lumpectomy,2018-03-07,2018-10-11,Alive,1,2018
+TCGA-A1-A0SF,54,FEMALE,-.283,.608,-.474,.617,II,Infiltrating Lobular Carcinoma,Positive,Positive,Negative,Modified Radical Mastectomy,2018-03-17,2019-06-23,Alive,2,2018
+TCGA-EW-A1J5,59,FEMALE,.359,1.185,-.423,.416,II,Infiltrating Lobular Carcinoma,Positive,Positive,Negative,Other,2017-08-03,2018-03-18,Alive,2,2017
+TCGA-BH-A0AY,62,FEMALE,.068,1.243,.066,-.365,II,Infiltrating Ductal Carcinoma,Positive,Positive,Negative,Simple Mastectomy,2018-03-17,2020-05-02,Alive,2,2018
+TCGA-E2-A15G,76,FEMALE,.044,-.402,.467,1.048,II,Infiltrating Ductal Carcinoma,Positive,Positive,Negative,Lumpectomy,2018-03-27,2019-02-06,Alive,2,2018
+TCGA-A8-A09B,58,FEMALE,-.335,.884,-.797,.321,III,Infiltrating Ductal Carcinoma,Positive,Positive,Negative,Other,2017-08-13,2018-08-13,Alive,3,2017
+TCGA-BH-A0HF,77,FEMALE,-.206,.578,-.249,.000,I,Infiltrating Lobular Carcinoma,Positive,Positive,Negative,Other,2018-03-27,2020-03-23,Alive,1,2018
+TCGA-BH-A0GY,67,FEMALE,-.755,.948,-.808,.209,II,Infiltrating Ductal Carcinoma,Positive,Positive,Negative,Other,2018-04-06,2020-10-09,Dead,2,2018
+TCGA-BH-A0BD,47,FEMALE,.121,.785,-.198,.352,II,Infiltrating Lobular Carcinoma,Positive,Positive,Negative,Other,2017-08-23,2019-02-28,Dead,2,2017
+TCGA-E2-A1IF,74,FEMALE,-.032,2.281,.009,-.538,I,Infiltrating Ductal Carcinoma,Positive,Positive,Negative,Lumpectomy,2018-04-06,2020-11-17,Alive,1,2018
+TCGA-A8-A08Z,76,FEMALE,-.161,-.544,.786,.622,II,Infiltrating Ductal Carcinoma,Positive,Positive,Negative,Other,2018-04-16,2020-10-19,Alive,2,2018
+TCGA-D8-A146,57,FEMALE,.127,-.498,.977,.624,II,Infiltrating Ductal Carcinoma,Positive,Positive,Negative,Modified Radical Mastectomy,2017-09-02,2018-08-12,Alive,2,2017
+TCGA-AR-A252,50,FEMALE,.136,1.829,-.769,-.277,I,Infiltrating Ductal Carcinoma,Positive,Positive,Negative,Other,2018-04-16,2020-04-21,Alive,1,2018
+TCGA-D8-A1JJ,54,FEMALE,.000,1.380,-.498,-.507,II,Infiltrating Ductal Carcinoma,Positive,Positive,Negative,Other,2018-04-26,2019-01-25,Dead,2,2018
+TCGA-C8-A274,63,FEMALE,.379,1.494,.114,.761,II,Infiltrating Ductal Carcinoma,Positive,Positive,Negative,Other,2017-09-12,2018-05-04,Alive,2,2017
+TCGA-GM-A2DO,54,FEMALE,.097,-.603,.478,.947,I,Infiltrating Ductal Carcinoma,Positive,Positive,Negative,Lumpectomy,2018-04-26,2020-01-09,Alive,1,2018
+TCGA-BH-A0H6,82,FEMALE,-.977,-.500,.658,-.718,I,Infiltrating Ductal Carcinoma,Positive,Positive,Negative,Other,2018-05-06,2020-05-22,Dead,1,2018
+TCGA-BH-A0H7,65,FEMALE,.436,.770,.494,.374,III,Infiltrating Ductal Carcinoma,Positive,Positive,Negative,Modified Radical Mastectomy,2017-09-22,2019-08-25,Alive,3,2017
+TCGA-A8-A09T,68,FEMALE,-.826,1.691,-.133,-.182,II,Infiltrating Ductal Carcinoma,Positive,Positive,Negative,Other,2018-05-06,2019-12-06,Dead,2,2018
+TCGA-D8-A1JS,77,FEMALE,-.058,.674,-.423,.168,I,Infiltrating Ductal Carcinoma,Positive,Positive,Negative,Lumpectomy,2018-05-16,2018-08-29,Alive,1,2018
+TCGA-BH-A0B0,56,FEMALE,-.258,.807,-.509,-.035,I,Infiltrating Ductal Carcinoma,Positive,Positive,Negative,Other,2017-10-02,2020-07-26,Alive,1,2017
+TCGA-A8-A096,73,FEMALE,.449,2.301,.012,.607,II,Infiltrating Lobular Carcinoma,Positive,Positive,Negative,Other,2018-05-16,2019-04-21,Dead,2,2018
+TCGA-D8-A1XC,85,FEMALE,.404,.488,.841,.616,III,Infiltrating Ductal Carcinoma,Positive,Positive,Negative,Modified Radical Mastectomy,2018-05-26,2018-08-15,Alive,3,2018
+TCGA-E2-A154,68,FEMALE,-.117,1.640,-.283,-.297,I,Infiltrating Ductal Carcinoma,Positive,Positive,Negative,Lumpectomy,2017-10-12,2018-09-02,Alive,1,2017
+TCGA-D8-A1JU,51,FEMALE,.148,.318,-.605,-.965,I,Infiltrating Lobular Carcinoma,Positive,Positive,Negative,Simple Mastectomy,2018-05-26,2018-09-09,Alive,1,2018
+TCGA-AR-A24W,55,FEMALE,.007,1.308,-.588,.146,II,Infiltrating Ductal Carcinoma,Positive,Positive,Negative,Other,2018-06-05,2019-12-07,Alive,2,2018
+TCGA-B6-A40C,51,FEMALE,.008,1.402,.122,-2.026,II,Mucinous Carcinoma,Positive,Positive,Negative,Simple Mastectomy,2017-10-22,2019-08-26,Alive,2,2017
+TCGA-A8-A09Q,83,FEMALE,-2.145,-.179,-.200,-1.489,III,Infiltrating Ductal Carcinoma,Positive,Positive,Positive,Other,2018-06-05,2020-07-05,Alive,3,2018
+TCGA-AN-A049,62,FEMALE,.680,.498,.019,.285,II,Infiltrating Ductal Carcinoma,Positive,Positive,Positive,Simple Mastectomy,2018-06-15,2018-07-04,Alive,2,2018
+TCGA-E9-A54X,85,FEMALE,.538,.281,-.106,.240,I,Mucinous Carcinoma,Positive,Positive,Negative,Lumpectomy,2017-11-01,2018-12-06,Alive,1,2017
+TCGA-A8-A082,58,FEMALE,-1.269,.106,1.135,-.395,II,Infiltrating Ductal Carcinoma,Positive,Positive,Negative,Other,2018-06-15,2019-12-16,Alive,2,2018
+TCGA-D8-A1X6,80,FEMALE,.466,2.580,-1.254,.152,III,Infiltrating Ductal Carcinoma,Positive,Positive,Negative,Modified Radical Mastectomy,2018-06-25,2019-02-16,Alive,3,2018
+TCGA-A2-A0YL,48,FEMALE,-.216,-.293,.868,-.242,III,Infiltrating Ductal Carcinoma,Positive,Positive,Negative,Simple Mastectomy,2017-11-11,2018-08-06,Dead,3,2017
+TCGA-A8-A09K,68,FEMALE,-.260,.860,.077,.187,II,Infiltrating Lobular Carcinoma,Positive,Positive,Negative,Other,2018-06-25,2020-12-23,Dead,2,2018
+TCGA-AO-A0JD,59,FEMALE,.480,.631,-.701,-.162,III,Infiltrating Ductal Carcinoma,Positive,Positive,Negative,Modified Radical Mastectomy,2018-07-05,2020-09-25,Alive,3,2018
+TCGA-E2-A14Q,50,FEMALE,1.594,1.675,-.038,.944,II,Infiltrating Ductal Carcinoma,Positive,Positive,Negative,Lumpectomy,2017-11-21,2020-07-22,Alive,2,2017
+TCGA-GM-A2DN,58,FEMALE,.354,1.533,-.567,.471,II,Mucinous Carcinoma,Positive,Positive,Negative,Modified Radical Mastectomy,2018-07-05,2019-06-22,Alive,2,2018
+TCGA-A2-A0T5,39,FEMALE,.553,1.996,-.142,-1.068,II,Infiltrating Ductal Carcinoma,Positive,Positive,Negative,Simple Mastectomy,2018-07-15,2019-06-01,Alive,2,2018
+TCGA-A7-A0CJ,57,FEMALE,-.214,-.628,1.023,.202,II,Infiltrating Ductal Carcinoma,Positive,Positive,Positive,Lumpectomy,2017-12-01,2018-06-08,Alive,2,2017
+TCGA-AN-A03Y,66,FEMALE,-.451,.423,-.029,.182,II,Infiltrating Lobular Carcinoma,Positive,Positive,Negative,Modified Radical Mastectomy,2018-07-15,2018-07-25,Alive,2,2018
+TCGA-BH-A42V,41,FEMALE,.100,-.465,.472,-.524,I,Infiltrating Ductal Carcinoma,Positive,Positive,Positive,Modified Radical Mastectomy,2018-07-25,2019-04-23,Alive,1,2018
+TCGA-A8-A06O,60,FEMALE,.532,1.541,-1.010,-.126,I,Infiltrating Ductal Carcinoma,Positive,Positive,Negative,Other,2017-12-11,1900-01-01,Unknown,1,2017
+TCGA-A2-A0CZ,46,FEMALE,-.643,.045,-.204,.658,II,Infiltrating Ductal Carcinoma,Positive,Positive,Positive,Simple Mastectomy,2018-07-25,2018-12-11,Alive,2,2018
+TCGA-A2-A0D3,42,FEMALE,-.176,.290,1.129,-.382,I,Infiltrating Ductal Carcinoma,Positive,Positive,Negative,Simple Mastectomy,2018-08-04,2020-08-09,Alive,1,2018
+TCGA-E9-A6HE,45,FEMALE,-.527,.757,-.561,-.503,III,Infiltrating Ductal Carcinoma,Positive,Positive,Negative,Simple Mastectomy,2017-12-21,2018-03-23,Alive,3,2017
+TCGA-D8-A27T,53,FEMALE,.014,-.684,.538,.719,III,Infiltrating Ductal Carcinoma,Positive,Positive,Negative,Simple Mastectomy,2018-08-04,2018-12-18,Alive,3,2018
+TCGA-E2-A1IK,71,FEMALE,.128,.810,.513,-.103,II,Infiltrating Ductal Carcinoma,Positive,Positive,Negative,Lumpectomy,2018-08-14,2020-01-15,Alive,2,2018
+TCGA-BH-A0B1,66,FEMALE,.141,1.300,-.343,-1.768,II,Infiltrating Ductal Carcinoma,Positive,Positive,Negative,Modified Radical Mastectomy,2017-12-31,2021-02-21,Dead,2,2017
+TCGA-BH-A0DX,62,FEMALE,.374,.783,-.574,-.963,I,Infiltrating Ductal Carcinoma,Positive,Positive,Negative,Other,2018-08-14,2020-12-06,Alive,1,2018
+TCGA-EW-A1OY,63,FEMALE,-.523,1.764,-.370,.011,II,Infiltrating Ductal Carcinoma,Positive,Positive,Negative,Lumpectomy,2018-08-24,2020-04-08,Alive,2,2018
+TCGA-OK-A5Q2,59,FEMALE,-.467,2.227,-.211,-.243,II,Infiltrating Ductal Carcinoma,Positive,Positive,Negative,Modified Radical Mastectomy,2018-01-10,2018-03-15,Alive,2,2018
+TCGA-C8-A1HG,50,FEMALE,.059,1.673,-.416,.301,II,Infiltrating Lobular Carcinoma,Positive,Positive,Negative,Other,2018-08-24,2018-10-13,Alive,2,2018
+TCGA-EW-A1J1,38,FEMALE,-.630,2.300,.113,-1.037,II,Infiltrating Lobular Carcinoma,Positive,Positive,Negative,Lumpectomy,2018-09-03,2019-06-12,Alive,2,2018
+TCGA-MS-A51U,44,FEMALE,-.279,2.169,-.462,.272,II,Infiltrating Ductal Carcinoma,Positive,Positive,Negative,Modified Radical Mastectomy,2018-01-20,1900-01-01,Unknown,2,2018
+TCGA-A2-A0CY,63,FEMALE,-.832,-.235,.638,.031,II,Infiltrating Ductal Carcinoma,Positive,Positive,Negative,Simple Mastectomy,2018-09-03,2022-03-14,Alive,2,2018
+TCGA-BH-A28O,50,FEMALE,.129,-.493,.316,-.564,III,Infiltrating Ductal Carcinoma,Positive,Positive,Negative,Other,2018-09-13,2019-08-03,Alive,3,2018
+TCGA-AR-A0U3,59,FEMALE,.322,2.050,-.347,-1.149,II,Infiltrating Ductal Carcinoma,Positive,Positive,Negative,Other,2018-01-30,2024-06-04,Dead,2,2018
+TCGA-BH-A0AZ,47,FEMALE,.581,.943,-.227,.367,III,Infiltrating Lobular Carcinoma,Positive,Positive,Negative,Other,2018-09-13,2021-01-27,Dead,3,2018
+TCGA-E2-A15A,45,FEMALE,.176,.593,-.508,.401,III,Infiltrating Ductal Carcinoma,Positive,Positive,Negative,Simple Mastectomy,2018-09-23,2020-02-07,Dead,3,2018
+TCGA-C8-A12N,58,FEMALE,-.547,.307,-.592,-.374,II,Infiltrating Ductal Carcinoma,Positive,Positive,Negative,Other,2018-02-09,2018-02-09,Dead,2,2018
+TCGA-BH-A0E2,49,FEMALE,-.202,.272,-.449,.321,III,Infiltrating Lobular Carcinoma,Positive,Positive,Negative,Modified Radical Mastectomy,2018-09-23,2019-10-04,Dead,3,2018
+TCGA-D8-A27P,64,FEMALE,-.970,-.769,.557,-.720,I,Infiltrating Ductal Carcinoma,Positive,Positive,Negative,Modified Radical Mastectomy,2018-10-03,2018-10-26,Dead,1,2018
+TCGA-AO-A0J8,61,FEMALE,.666,2.189,-1.102,-.831,II,Infiltrating Lobular Carcinoma,Positive,Positive,Negative,Lumpectomy,2018-02-19,2018-11-23,Alive,2,2018
+TCGA-E2-A1IN,60,FEMALE,-.101,1.372,-.869,.041,I,Infiltrating Lobular Carcinoma,Positive,Positive,Negative,Lumpectomy,2018-10-03,2019-10-30,Alive,1,2018
+TCGA-GM-A5PX,65,FEMALE,-.540,2.604,-.688,.003,II,Infiltrating Ductal Carcinoma,Positive,Positive,Negative,Simple Mastectomy,2018-02-19,2019-08-24,Alive,2,2018
+TCGA-AO-A03R,57,FEMALE,.053,1.511,.767,.186,II,Infiltrating Ductal Carcinoma,Positive,Positive,Negative,Modified Radical Mastectomy,2018-03-01,2020-02-06,Alive,2,2018
+TCGA-A2-A0EV,80,FEMALE,-.018,.924,-.028,.270,I,Infiltrating Ductal Carcinoma,Positive,Positive,Negative,Lumpectomy,2018-10-13,2020-04-10,Alive,1,2018
+TCGA-A8-A09M,75,FEMALE,-1.971,-.632,.037,-.467,III,Infiltrating Ductal Carcinoma,Positive,Positive,Negative,Other,2018-03-01,2019-06-01,Alive,3,2018
+TCGA-A8-A09V,51,FEMALE,-.852,1.676,1.702,-.078,II,Infiltrating Ductal Carcinoma,Positive,Positive,Negative,Other,2018-03-11,2019-06-11,Dead,2,2018
+TCGA-D8-A27K,47,FEMALE,-.190,1.978,-.008,.035,II,Infiltrating Ductal Carcinoma,Positive,Positive,Negative,Modified Radical Mastectomy,2018-10-23,2019-02-19,Dead,2,2018
+TCGA-C8-A26V,47,FEMALE,-.525,1.122,.437,.624,III,Infiltrating Ductal Carcinoma,Positive,Positive,Negative,Modified Radical Mastectomy,2018-03-11,2018-03-20,Dead,3,2018
+TCGA-AO-A03M,29,FEMALE,-.106,.937,-.622,.186,I,Infiltrating Lobular Carcinoma,Positive,Positive,Negative,Simple Mastectomy,2018-03-21,2022-03-15,Dead,1,2018
+TCGA-AN-A0FF,32,FEMALE,.125,1.457,-.680,-.010,I,Infiltrating Ductal Carcinoma,Positive,Positive,Negative,Modified Radical Mastectomy,2018-11-02,2019-04-23,Dead,1,2018
+TCGA-EW-A1PE,56,FEMALE,-.933,.702,-.599,-1.899,II,Infiltrating Ductal Carcinoma,Positive,Positive,Negative,Lumpectomy,2018-03-21,2018-07-06,Dead,2,2018
+TCGA-D8-A27I,58,FEMALE,.358,1.519,-.307,.436,III,Infiltrating Lobular Carcinoma,Positive,Positive,Negative,Modified Radical Mastectomy,2018-03-31,2018-10-03,Dead,3,2018
+TCGA-D8-A1XO,56,FEMALE,-.065,-.509,.520,.779,II,Infiltrating Ductal Carcinoma,Positive,Positive,Negative,Modified Radical Mastectomy,2018-11-12,2019-07-12,Dead,2,2018
+TCGA-EW-A1J6,70,FEMALE,1.067,.997,-.586,.486,I,Infiltrating Ductal Carcinoma,Positive,Positive,Negative,Lumpectomy,2018-03-31,2019-11-16,Alive,1,2018
+TCGA-D8-A1JP,73,FEMALE,-.096,1.864,-.289,-.353,I,Infiltrating Ductal Carcinoma,Positive,Positive,Negative,Lumpectomy,2018-04-10,2018-09-24,Alive,1,2018
+TCGA-LD-A7W6,54,FEMALE,.327,-.295,1.769,.771,II,Infiltrating Ductal Carcinoma,Positive,Positive,Negative,Modified Radical Mastectomy,2018-11-22,2019-04-11,Alive,2,2018
+TCGA-A8-A07G,65,FEMALE,-.445,1.495,-1.107,-.252,II,Infiltrating Lobular Carcinoma,Positive,Positive,Negative,Other,2018-04-10,2019-11-08,Alive,2,2018
+TCGA-D8-A1JH,56,FEMALE,-.351,1.878,-.367,.465,I,Infiltrating Ductal Carcinoma,Positive,Positive,Negative,Modified Radical Mastectomy,2018-04-20,2019-01-29,Alive,1,2018
+TCGA-BH-A0E9,53,FEMALE,-.853,-.006,-.381,-.806,II,Infiltrating Ductal Carcinoma,Positive,Positive,Negative,Modified Radical Mastectomy,2018-12-02,2020-01-11,Alive,2,2018
+TCGA-BH-A0B5,40,FEMALE,.088,2.196,-.994,-.378,III,Infiltrating Ductal Carcinoma,Positive,Positive,Positive,Modified Radical Mastectomy,2018-04-20,2019-08-04,Alive,3,2018
+TCGA-AR-A24M,38,FEMALE,-.268,.195,-1.025,.102,III,Infiltrating Ductal Carcinoma,Positive,Positive,Negative,Other,2018-04-30,2018-11-07,Alive,3,2018
+TCGA-E9-A227,42,FEMALE,.226,1.749,-.544,-.390,II,Infiltrating Ductal Carcinoma,Positive,Positive,Positive,Lumpectomy,2018-12-12,2019-01-05,Alive,2,2018
+TCGA-AO-A12H,69,FEMALE,.299,-.308,1.072,-.180,II,Infiltrating Ductal Carcinoma,Positive,Positive,Negative,Simple Mastectomy,2018-04-30,2020-09-09,Alive,2,2018
+TCGA-BH-A2L8,45,FEMALE,-.526,.718,-.676,-.835,II,Infiltrating Lobular Carcinoma,Positive,Positive,Negative,Other,2018-05-10,2018-10-25,Alive,2,2018
+TCGA-BH-A0C1,61,FEMALE,-.759,.062,-.206,-1.241,III,Infiltrating Lobular Carcinoma,Positive,Positive,Negative,Modified Radical Mastectomy,2018-12-22,2019-11-26,Alive,3,2018
+TCGA-A7-A26E,71,FEMALE,.419,-.253,-.241,-.208,III,Infiltrating Ductal Carcinoma,Positive,Positive,Negative,Simple Mastectomy,2018-05-10,2019-07-05,Alive,3,2018
+TCGA-BH-A0DQ,42,FEMALE,.953,2.150,.008,-.048,II,Infiltrating Ductal Carcinoma,Positive,Positive,Negative,Other,2018-05-20,2018-08-26,Alive,2,2018
+TCGA-5L-AAT0,42,FEMALE,-.449,-.720,-.112,-.035,II,Infiltrating Ductal Carcinoma,Positive,Positive,Positive,Modified Radical Mastectomy,2019-01-01,2020-04-22,Alive,2,2019
+TCGA-A8-A06P,63,FEMALE,-.489,.894,-.471,-.206,III,Infiltrating Ductal Carcinoma,Positive,Positive,Negative,Other,2018-05-20,2019-06-20,Alive,3,2018
+TCGA-A8-A0A4,73,FEMALE,-.219,.954,.324,-.800,II,Infiltrating Ductal Carcinoma,Positive,Positive,Negative,Other,2018-05-30,2019-06-30,Alive,2,2018
+TCGA-BH-AB28,53,FEMALE,-.347,1.409,-.376,-.045,III,Infiltrating Lobular Carcinoma,Positive,Positive,Negative,Modified Radical Mastectomy,2019-01-11,2019-07-15,Alive,3,2019
+TCGA-AQ-A54O,51,MALE,.838,.506,-.545,.315,II,Infiltrating Lobular Carcinoma,Positive,Positive,Negative,Simple Mastectomy,2018-05-30,2020-03-25,Alive,2,2018
+TCGA-C8-A273,29,FEMALE,.002,.893,-.679,-.178,II,Infiltrating Ductal Carcinoma,Positive,Positive,Negative,Other,2018-06-09,2018-06-15,Alive,2,2018
+TCGA-A2-A1FZ,63,FEMALE,.903,1.968,-.791,.963,II,Infiltrating Lobular Carcinoma,Positive,Positive,Negative,Simple Mastectomy,2019-01-21,2020-03-06,Dead,2,2019
+TCGA-LL-A6FQ,77,FEMALE,-.162,1.451,-.758,.732,III,Infiltrating Ductal Carcinoma,Positive,Positive,Negative,Modified Radical Mastectomy,2018-06-09,2018-08-28,Alive,3,2018
+TCGA-Z7-A8R6,46,FEMALE,.227,1.930,-.331,-.595,I,Infiltrating Ductal Carcinoma,Positive,Positive,Negative,Lumpectomy,2018-06-19,2020-08-27,Alive,1,2018
+TCGA-A8-A07W,76,FEMALE,-.864,-.119,.071,.751,III,Infiltrating Lobular Carcinoma,Positive,Positive,Positive,Other,2019-01-31,2019-12-01,Dead,3,2019
+TCGA-C8-A27A,48,FEMALE,-.381,-.475,.567,-.307,II,Infiltrating Lobular Carcinoma,Positive,Positive,Negative,Modified Radical Mastectomy,2018-06-19,2019-06-25,Alive,2,2018
+TCGA-AO-A126,39,FEMALE,-.203,1.098,-.046,-.045,II,Infiltrating Lobular Carcinoma,Positive,Positive,Negative,Simple Mastectomy,2018-06-29,2020-10-26,Alive,2,2018
+TCGA-A2-A4RX,67,FEMALE,.015,.604,.067,-.854,II,Infiltrating Ductal Carcinoma,Positive,Positive,Negative,Simple Mastectomy,2019-02-10,2019-11-11,Alive,2,2019
+TCGA-A2-A0CV,41,FEMALE,.673,-.633,.009,.556,II,Infiltrating Lobular Carcinoma,Positive,Positive,Negative,Modified Radical Mastectomy,2018-06-29,2020-11-15,Alive,2,2018
+TCGA-BH-A18L,50,FEMALE,-.158,2.152,-.854,.543,III,Infiltrating Ductal Carcinoma,Positive,Positive,Negative,Other,2018-07-09,2020-04-19,Dead,3,2018
+TCGA-D8-A1JE,62,FEMALE,.457,.739,-.632,-.060,II,Infiltrating Lobular Carcinoma,Positive,Positive,Negative,Modified Radical Mastectomy,2019-02-20,2019-04-18,Alive,2,2019
+TCGA-A8-A086,59,FEMALE,.006,1.482,.317,.321,II,Infiltrating Lobular Carcinoma,Positive,Positive,Negative,Other,2018-07-09,2019-08-09,Alive,2,2018
+TCGA-AO-A0JA,36,FEMALE,.469,1.553,-.165,-.276,III,Infiltrating Ductal Carcinoma,Positive,Positive,Negative,Modified Radical Mastectomy,2018-07-19,2019-06-30,Alive,3,2018
+TCGA-GM-A2DL,50,FEMALE,-.250,.323,-.514,-.811,I,Infiltrating Ductal Carcinoma,Positive,Positive,Negative,Lumpectomy,2019-03-02,2026-09-24,Alive,1,2019
+TCGA-AC-A3W6,90,FEMALE,-1.388,.775,.291,-.924,III,Infiltrating Ductal Carcinoma,Positive,Positive,Negative,Modified Radical Mastectomy,2018-07-19,2018-09-08,Alive,3,2018
+TCGA-AR-A1AK,70,FEMALE,.700,.973,-.296,.106,I,Infiltrating Ductal Carcinoma,Positive,Positive,Negative,Simple Mastectomy,2018-07-29,2022-11-04,Alive,1,2018
+TCGA-E2-A1IU,60,FEMALE,-.118,1.154,.542,.746,I,Infiltrating Ductal Carcinoma,Positive,Positive,Negative,Simple Mastectomy,2019-03-12,2019-07-17,Alive,1,2019
+TCGA-AR-A0U2,47,FEMALE,.516,2.650,-.103,-.046,III,Infiltrating Lobular Carcinoma,Positive,Positive,Negative,Modified Radical Mastectomy,2018-07-29,1900-01-01,Dead,3,2018
+TCGA-BH-A0HO,48,FEMALE,.228,1.211,-.463,-.545,II,Infiltrating Lobular Carcinoma,Positive,Positive,Negative,Other,2018-08-08,2018-10-23,Alive,2,2018
+TCGA-A7-A56D,84,FEMALE,-.230,1.130,.166,1.184,II,Infiltrating Ductal Carcinoma,Positive,Positive,Negative,Lumpectomy,2019-03-22,2019-09-15,Alive,2,2019
+TCGA-D8-A1JI,54,FEMALE,-.417,1.269,-.727,-.828,II,Infiltrating Ductal Carcinoma,Positive,Positive,Negative,Modified Radical Mastectomy,2018-08-08,2018-08-29,Alive,2,2018
+TCGA-EW-A1J2,50,FEMALE,.337,.650,-.772,.410,III,Infiltrating Ductal Carcinoma,Positive,Positive,Negative,Other,2018-08-18,2019-01-05,Dead,3,2018
+TCGA-AQ-A7U7,55,FEMALE,.396,.861,-.972,-.061,III,Infiltrating Lobular Carcinoma,Positive,Positive,Negative,Other,2019-04-01,2020-01-30,Alive,3,2019
+TCGA-C8-A12W,49,FEMALE,-1.252,2.674,-.536,-1.107,III,Infiltrating Ductal Carcinoma,Positive,Positive,Negative,Other,2018-08-18,2018-08-25,Alive,3,2018
+TCGA-AC-A3BB,46,FEMALE,.145,-.761,.733,.824,III,Infiltrating Ductal Carcinoma,Positive,Positive,Negative,Modified Radical Mastectomy,2018-08-28,2018-09-27,Alive,3,2018
+TCGA-A8-A092,48,FEMALE,-.644,-.594,-.110,-1.603,III,Infiltrating Ductal Carcinoma,Positive,Positive,Negative,Other,2019-04-11,2020-08-10,Alive,3,2019
+TCGA-BH-A0DK,49,FEMALE,-.287,.655,-.099,-.939,II,Infiltrating Ductal Carcinoma,Positive,Positive,Negative,Simple Mastectomy,2018-08-28,2019-10-25,Alive,2,2018
+TCGA-E2-A14T,52,FEMALE,1.090,2.766,-.557,-.476,II,Infiltrating Ductal Carcinoma,Positive,Positive,Negative,Simple Mastectomy,2018-09-07,2021-02-13,Alive,2,2018
+TCGA-A2-A1FV,74,FEMALE,-.211,-.979,-1.060,-.843,II,Infiltrating Ductal Carcinoma,Positive,Positive,Negative,Simple Mastectomy,2019-04-21,2020-07-25,Alive,2,2019
+TCGA-C8-A1HI,40,FEMALE,-1.455,-.742,1.134,-.840,III,Infiltrating Lobular Carcinoma,Positive,Positive,Negative,Other,2018-09-07,1900-01-01,Unknown,3,2018
+TCGA-D8-A1JD,41,FEMALE,-.070,-.272,.467,-1.220,II,Infiltrating Lobular Carcinoma,Positive,Positive,Negative,Modified Radical Mastectomy,2018-09-17,2019-06-17,Alive,2,2018
+TCGA-BH-A0W7,49,FEMALE,-.120,-.945,.748,-.676,I,Infiltrating Ductal Carcinoma,Positive,Positive,Negative,Other,2019-05-01,2020-11-09,Alive,1,2019
+TCGA-A8-A0AD,83,FEMALE,-.393,1.476,.144,.641,I,Infiltrating Ductal Carcinoma,Positive,Positive,Negative,Other,2018-09-17,2019-02-21,Alive,1,2018
+TCGA-A7-A3RF,79,FEMALE,-.483,-.317,.472,.347,II,Infiltrating Ductal Carcinoma,Positive,Positive,Positive,Lumpectomy,2018-09-27,2018-11-20,Alive,2,2018
+TCGA-AR-A24V,52,FEMALE,.445,.819,-.439,-.008,II,Infiltrating Ductal Carcinoma,Positive,Positive,Negative,Other,2019-05-11,2023-11-14,Alive,2,2019
+TCGA-AR-A1AN,46,FEMALE,.528,-.621,-.547,.391,II,Infiltrating Ductal Carcinoma,Positive,Positive,Negative,Other,2018-09-27,2022-05-19,Alive,2,2018
+TCGA-AO-A03O,69,FEMALE,-.758,-.338,.561,.208,II,Infiltrating Lobular Carcinoma,Positive,Positive,Negative,Modified Radical Mastectomy,2018-10-07,1900-01-01,Dead,2,2018
+TCGA-A2-A0EW,53,FEMALE,-.628,.261,-.204,-1.305,III,Infiltrating Lobular Carcinoma,Positive,Positive,Positive,Simple Mastectomy,2019-05-21,2020-05-25,Alive,3,2019
+TCGA-BH-A0DH,63,FEMALE,-.560,.484,.081,.610,II,Infiltrating Ductal Carcinoma,Positive,Positive,Positive,Other,2018-10-07,2020-11-01,Alive,2,2018
+TCGA-A8-A08O,45,FEMALE,-.464,.853,.248,-.547,III,Infiltrating Lobular Carcinoma,Positive,Positive,Positive,Other,2018-10-17,2020-10-29,Alive,3,2018
+TCGA-W8-A86G,66,FEMALE,.496,1.866,.044,.242,II,Infiltrating Ductal Carcinoma,Positive,Positive,Negative,Lumpectomy,2019-05-31,2019-11-08,Alive,2,2019
+TCGA-LD-A7W5,52,FEMALE,.784,2.294,-.439,-.048,III,Infiltrating Ductal Carcinoma,Positive,Positive,Positive,Lumpectomy,2018-10-17,2019-02-18,Alive,3,2018
+TCGA-E2-A15M,66,FEMALE,-.725,-.283,.959,.351,II,Infiltrating Ductal Carcinoma,Positive,Positive,Negative,Lumpectomy,2018-10-27,2019-06-19,Alive,2,2018
+TCGA-C8-A12U,46,FEMALE,-.011,.867,.282,-.546,II,Infiltrating Lobular Carcinoma,Positive,Positive,Negative,Other,2019-06-10,1900-01-01,Unknown,2,2019
+TCGA-BH-A0BP,76,FEMALE,-.245,.614,.127,.391,I,Infiltrating Ductal Carcinoma,Positive,Positive,Negative,Other,2018-10-27,2020-02-20,Alive,1,2018
+TCGA-D8-A27L,49,FEMALE,-.064,-.871,.869,.317,III,Infiltrating Ductal Carcinoma,Positive,Positive,Negative,Modified Radical Mastectomy,2018-11-06,2019-03-12,Alive,3,2018
+TCGA-E2-A153,51,FEMALE,-.476,1.795,-.148,-.308,II,Infiltrating Ductal Carcinoma,Positive,Positive,Negative,Modified Radical Mastectomy,2019-06-20,2021-01-26,Alive,2,2019
+TCGA-AO-A03T,42,FEMALE,.173,1.297,-.857,-.237,II,Infiltrating Lobular Carcinoma,Positive,Positive,Negative,Modified Radical Mastectomy,2018-11-06,2019-03-03,Alive,2,2018
+TCGA-AO-A03N,59,FEMALE,.276,-.876,1.298,-.687,II,Mucinous Carcinoma,Positive,Positive,Negative,Modified Radical Mastectomy,2018-11-16,2020-08-22,Alive,2,2018
+TCGA-D8-A141,40,FEMALE,.717,1.000,.135,-.618,II,Infiltrating Ductal Carcinoma,Positive,Positive,Negative,Modified Radical Mastectomy,2019-06-30,2019-10-21,Alive,2,2019
+TCGA-A8-A08F,59,FEMALE,.539,-.872,-.588,-.952,III,Infiltrating Ductal Carcinoma,Positive,Positive,Negative,Other,2018-11-16,2020-05-18,Alive,3,2018
+TCGA-AC-A5XU,74,FEMALE,.973,1.427,-.367,-.108,II,Infiltrating Lobular Carcinoma,Positive,Positive,Negative,Lumpectomy,2018-11-26,2018-12-05,Alive,2,2018
+TCGA-B6-A401,47,FEMALE,-.198,.626,-.281,-.478,II,Infiltrating Ductal Carcinoma,Positive,Positive,Negative,Lumpectomy,2019-07-10,2020-01-15,Alive,2,2019
+TCGA-E9-A1NH,71,FEMALE,.394,1.705,.036,1.441,II,Infiltrating Lobular Carcinoma,Positive,Positive,Negative,Modified Radical Mastectomy,2018-11-26,1900-01-01,Unknown,2,2018
+TCGA-GM-A3XN,44,FEMALE,.964,.823,-.307,-.150,III,Infiltrating Ductal Carcinoma,Positive,Positive,Negative,Lumpectomy,2018-12-06,2020-09-07,Alive,3,2018
+TCGA-A2-A4RW,49,FEMALE,-.144,2.324,-.707,.719,III,Infiltrating Ductal Carcinoma,Positive,Positive,Negative,Modified Radical Mastectomy,2019-07-20,2020-02-27,Alive,3,2019
+TCGA-BH-A0DV,54,FEMALE,.514,1.694,-.144,1.025,III,Infiltrating Ductal Carcinoma,Positive,Positive,Negative,Modified Radical Mastectomy,2018-12-06,2019-12-15,Alive,3,2018
+TCGA-WT-AB44,77,FEMALE,.478,.819,-.406,-.655,I,Infiltrating Lobular Carcinoma,Positive,Positive,Negative,Lumpectomy,2018-12-16,2021-02-14,Alive,1,2018
+TCGA-A8-A0A2,66,FEMALE,-.335,1.608,.380,.122,II,Infiltrating Ductal Carcinoma,Positive,Positive,Negative,Other,2018-10-07,2020-05-08,Alive,2,2018
+TCGA-A8-A07J,35,FEMALE,-.818,1.790,-1.042,.039,II,Infiltrating Lobular Carcinoma,Positive,Positive,Negative,Other,2018-10-17,2019-10-17,Alive,2,2018
+TCGA-HN-A2OB,45,FEMALE,-.712,1.692,-.801,.794,II,Infiltrating Ductal Carcinoma,Positive,Positive,Negative,Simple Mastectomy,2019-05-31,2020-08-22,Alive,2,2019
+TCGA-EW-A1IY,38,FEMALE,.287,.462,-.679,.495,I,Infiltrating Ductal Carcinoma,Positive,Positive,Negative,Lumpectomy,2018-10-17,2019-07-02,Alive,1,2018
+TCGA-AO-A12B,63,FEMALE,.177,.444,-.251,-.374,II,Infiltrating Ductal Carcinoma,Positive,Positive,Negative,Simple Mastectomy,2018-10-27,2019-07-13,Alive,2,2018
+TCGA-A2-A4S3,59,FEMALE,.715,2.191,.392,.952,II,Infiltrating Ductal Carcinoma,Positive,Positive,Negative,Modified Radical Mastectomy,2019-06-10,2019-09-22,Alive,2,2019
+TCGA-AC-A6NO,43,FEMALE,.443,1.414,-.933,.122,II,Infiltrating Ductal Carcinoma,Positive,Positive,Negative,Modified Radical Mastectomy,2018-10-27,2018-12-17,Alive,2,2018
+TCGA-A8-A07Z,85,FEMALE,.406,.331,-.257,-.655,II,Infiltrating Ductal Carcinoma,Positive,Positive,Negative,Other,2018-11-06,2021-01-17,Alive,2,2018
+TCGA-C8-A12X,62,FEMALE,.649,1.817,.279,.132,II,Infiltrating Lobular Carcinoma,Positive,Positive,Negative,Other,2019-06-20,1900-01-01,Unknown,2,2019
+TCGA-D8-A1XB,62,FEMALE,.786,.808,.422,-.144,II,Infiltrating Ductal Carcinoma,Positive,Positive,Negative,Modified Radical Mastectomy,2018-11-06,2019-05-26,Alive,2,2018
+TCGA-C8-A12O,50,FEMALE,-.323,.988,-.293,-.262,II,Infiltrating Ductal Carcinoma,Positive,Positive,Negative,Other,2018-11-16,1900-01-01,Unknown,2,2018
+TCGA-BH-A0HQ,56,FEMALE,-.586,.224,-.307,-1.597,II,Infiltrating Ductal Carcinoma,Positive,Positive,Negative,Other,2018-11-06,2020-10-27,Alive,2,2018
+TCGA-BH-A0HI,78,FEMALE,-.876,.129,-.370,.132,I,Infiltrating Ductal Carcinoma,Positive,Positive,Negative,Other,2018-11-16,2020-07-28,Alive,1,2018
+TCGA-BH-A0DO,78,FEMALE,-.170,1.388,-1.307,-1.260,I,Infiltrating Ductal Carcinoma,Positive,Positive,Negative,Simple Mastectomy,2018-11-26,2020-05-04,Alive,1,2018
+TCGA-A2-A3KD,47,FEMALE,.295,1.404,.244,-.396,III,Infiltrating Lobular Carcinoma,Positive,Positive,Positive,Lumpectomy,2018-11-16,2021-01-28,Alive,3,2018
+TCGA-BH-A0BA,51,FEMALE,.188,2.664,1.196,.186,III,Infiltrating Lobular Carcinoma,Positive,Positive,Negative,Modified Radical Mastectomy,2018-11-26,2020-10-01,Dead,3,2018
+TCGA-AN-A046,68,FEMALE,-.577,1.328,.081,-.399,II,Infiltrating Ductal Carcinoma,Positive,Positive,Negative,Modified Radical Mastectomy,2018-12-06,2018-12-16,Dead,2,2018
+TCGA-A2-A0T7,51,FEMALE,-.385,.806,-1.627,-.513,II,Infiltrating Ductal Carcinoma,Positive,Positive,Positive,Modified Radical Mastectomy,2018-11-26,2019-12-28,Alive,2,2018
+TCGA-E2-A15F,64,FEMALE,-.345,.790,-.469,-.456,I,Infiltrating Lobular Carcinoma,Positive,Positive,Negative,Lumpectomy,2018-12-06,2020-03-19,Alive,1,2018
+TCGA-BH-A0DT,41,FEMALE,.065,.759,.281,-1.713,II,Infiltrating Lobular Carcinoma,Positive,Positive,Negative,Other,2018-12-16,2021-01-24,Alive,2,2018
+TCGA-D8-A3Z5,54,FEMALE,-.816,-.635,1.338,-.426,III,Infiltrating Ductal Carcinoma,Positive,Positive,Negative,Simple Mastectomy,2018-12-06,2020-02-20,Alive,3,2018
+TCGA-AR-A1AS,54,FEMALE,.435,2.452,.334,.629,II,Infiltrating Ductal Carcinoma,Positive,Positive,Negative,Other,2018-12-16,2020-09-26,Dead,2,2018
+TCGA-BH-A0EI,51,FEMALE,.572,2.009,-1.183,.290,II,Infiltrating Lobular Carcinoma,Positive,Positive,Negative,Other,2018-12-26,2021-01-07,Alive,2,2018
+TCGA-E2-A108,64,FEMALE,.416,1.609,-.519,.943,III,Infiltrating Ductal Carcinoma,Positive,Positive,Negative,Lumpectomy,2018-12-16,2019-04-19,Alive,3,2018
+TCGA-D8-A3Z6,56,FEMALE,.326,1.860,-1.077,.337,III,Infiltrating Ductal Carcinoma,Positive,Positive,Negative,Modified Radical Mastectomy,2018-12-26,2019-06-29,Dead,3,2018
+TCGA-A8-A0A6,64,FEMALE,-.339,-.641,1.658,-.421,III,Infiltrating Ductal Carcinoma,Positive,Positive,Negative,Other,2019-01-05,2020-10-06,Alive,3,2019
+TCGA-GM-A3XG,46,FEMALE,.766,.524,-.157,.144,III,Infiltrating Ductal Carcinoma,Positive,Positive,Negative,Modified Radical Mastectomy,2018-12-26,2021-02-15,Alive,3,2018
+TCGA-E2-A1L9,40,FEMALE,.336,1.720,.440,-.342,II,Infiltrating Ductal Carcinoma,Positive,Positive,Negative,Lumpectomy,2019-01-05,2020-01-28,Dead,2,2019
+TCGA-EW-A1P3,48,FEMALE,-.340,.163,-.177,.413,II,Mucinous Carcinoma,Positive,Positive,Negative,Simple Mastectomy,2019-01-15,2020-12-02,Alive,2,2019
+TCGA-BH-A0BO,54,FEMALE,-.586,1.514,1.062,.101,I,Infiltrating Ductal Carcinoma,Positive,Positive,Negative,Other,2019-01-05,2021-02-08,Alive,1,2019
+TCGA-AQ-A1H3,49,FEMALE,-.584,-.333,-.131,-1.239,III,Infiltrating Ductal Carcinoma,Positive,Positive,Negative,Modified Radical Mastectomy,2019-01-15,2019-06-26,Alive,3,2019
+TCGA-A8-A09D,47,FEMALE,-.362,1.114,.313,-.574,II,Infiltrating Ductal Carcinoma,Positive,Positive,Negative,Other,2019-01-25,2020-02-25,Alive,2,2019
+TCGA-A1-A0SD,59,FEMALE,.025,1.401,.025,.280,II,Infiltrating Ductal Carcinoma,Positive,Positive,Positive,Lumpectomy,2019-01-15,2020-03-27,Alive,2,2019
+TCGA-E9-A5FK,60,FEMALE,.209,-.561,1.239,.967,III,Infiltrating Ductal Carcinoma,Positive,Positive,Negative,Modified Radical Mastectomy,2019-01-25,2019-02-06,Dead,3,2019
+TCGA-GM-A3NY,72,FEMALE,.417,1.207,-.812,.936,II,Infiltrating Ductal Carcinoma,Positive,Positive,Negative,Lumpectomy,2019-02-04,2021-02-16,Alive,2,2019
+TCGA-A1-A0SE,56,FEMALE,.455,1.177,-.575,.366,I,Mucinous Carcinoma,Positive,Positive,Negative,Modified Radical Mastectomy,2019-01-25,2021-02-13,Alive,1,2019
+TCGA-A8-A07L,58,FEMALE,-.476,.430,-.589,.646,III,Infiltrating Lobular Carcinoma,Positive,Positive,Negative,Other,2019-02-04,2020-07-06,Alive,3,2019
+TCGA-A2-A0CL,37,FEMALE,-1.147,.961,.276,.246,III,Infiltrating Ductal Carcinoma,Positive,Positive,Positive,Modified Radical Mastectomy,2019-02-14,2020-05-09,Alive,3,2019
+TCGA-EW-A1PC,66,FEMALE,.286,1.400,.319,.836,II,Infiltrating Ductal Carcinoma,Positive,Positive,Negative,Modified Radical Mastectomy,2019-02-04,2019-08-10,Dead,2,2019
+TCGA-BH-A0DS,71,FEMALE,.355,1.975,-.013,.551,III,Infiltrating Ductal Carcinoma,Positive,Positive,Negative,Other,2019-02-14,2019-05-03,Dead,3,2019
+TCGA-D8-A73U,88,FEMALE,.204,.525,-.845,-.706,II,Infiltrating Ductal Carcinoma,Positive,Positive,Negative,Simple Mastectomy,2019-02-24,2020-06-30,Alive,2,2019
+TCGA-AO-A0JF,68,FEMALE,-.416,.758,.440,.202,II,Infiltrating Lobular Carcinoma,Positive,Positive,Negative,Lumpectomy,2019-02-14,2020-02-03,Dead,2,2019
+TCGA-AR-A24Z,57,FEMALE,.195,1.668,.393,.703,II,Infiltrating Ductal Carcinoma,Positive,Positive,Negative,Other,2019-02-24,2020-05-19,Dead,2,2019
+TCGA-A1-A0SQ,45,FEMALE,-.278,1.429,-.579,.223,II,Infiltrating Ductal Carcinoma,Positive,Positive,Negative,Modified Radical Mastectomy,2019-03-06,2020-09-10,Dead,2,2019
+TCGA-AO-A12E,51,FEMALE,.090,-.639,2.193,-.838,II,Infiltrating Ductal Carcinoma,Positive,Positive,Negative,Modified Radical Mastectomy,2019-02-24,2020-12-05,Alive,2,2019
+TCGA-E9-A54Y,63,FEMALE,-.603,1.119,-.606,-.584,III,Infiltrating Ductal Carcinoma,Positive,Positive,Negative,Modified Radical Mastectomy,2019-03-06,2019-05-15,Alive,3,2019
+TCGA-Z7-A8R5,61,FEMALE,.383,1.655,.573,.348,III,Infiltrating Lobular Carcinoma,Positive,Positive,Positive,Other,2019-03-16,2019-11-16,Alive,3,2019
+TCGA-BH-A0BJ,41,FEMALE,-.059,2.055,.047,-.210,II,Infiltrating Lobular Carcinoma,Positive,Positive,Negative,Other,2019-03-06,2020-12-25,Alive,2,2019
+TCGA-AO-A0JB,50,FEMALE,-.702,.203,.544,-.024,III,Infiltrating Lobular Carcinoma,Positive,Positive,Negative,Modified Radical Mastectomy,2019-03-16,2021-05-04,Dead,3,2019
+TCGA-BH-A0DP,60,FEMALE,.292,1.775,-.094,.567,II,Infiltrating Ductal Carcinoma,Positive,Positive,Negative,Simple Mastectomy,2019-03-26,2020-07-14,Dead,2,2019
+TCGA-A8-A07F,65,FEMALE,-.443,.610,-.399,.332,II,Infiltrating Ductal Carcinoma,Positive,Positive,Negative,Other,2019-03-16,2020-10-13,Dead,2,2019
+TCGA-BH-A8G0,54,FEMALE,.754,1.643,-.333,.858,II,Infiltrating Ductal Carcinoma,Positive,Positive,Negative,Simple Mastectomy,2019-03-26,2019-10-11,Dead,2,2019
+TCGA-A1-A0SI,52,FEMALE,.456,1.365,-.539,.144,II,Infiltrating Ductal Carcinoma,Positive,Positive,Negative,Lumpectomy,2019-04-05,2020-12-30,Alive,2,2019
+TCGA-D8-A1XU,56,FEMALE,-.315,-.401,.755,.092,I,Infiltrating Ductal Carcinoma,Positive,Positive,Negative,Modified Radical Mastectomy,2019-03-26,2019-08-23,Alive,1,2019
+TCGA-BH-A18S,79,FEMALE,.978,1.711,-.656,.269,I,Infiltrating Ductal Carcinoma,Positive,Positive,Negative,Other,2019-04-05,1900-01-01,Dead,1,2019
+TCGA-A8-A0A1,84,FEMALE,.838,2.033,-.632,.566,II,Infiltrating Lobular Carcinoma,Positive,Positive,Negative,Other,2019-04-15,2020-04-14,Alive,2,2019
+TCGA-D8-A1J8,77,FEMALE,-.528,.167,.119,-.433,II,Infiltrating Lobular Carcinoma,Positive,Positive,Negative,Modified Radical Mastectomy,2019-04-05,2019-12-17,Alive,2,2019
+TCGA-GM-A2DM,57,FEMALE,.357,1.583,-.467,1.039,II,Infiltrating Lobular Carcinoma,Positive,Positive,Negative,Lumpectomy,2019-04-15,2020-03-11,Alive,2,2019
+TCGA-EW-A1IX,48,FEMALE,.331,1.762,.176,.789,II,Infiltrating Lobular Carcinoma,Positive,Positive,Negative,Other,2019-04-25,2021-02-03,Alive,2,2019
+TCGA-A8-A0A9,80,FEMALE,-.310,2.220,-.556,.524,II,Infiltrating Ductal Carcinoma,Positive,Positive,Negative,Other,2019-04-15,2020-05-15,Alive,2,2019
+TCGA-AR-A1AV,68,MALE,1.470,.469,.136,-.290,II,Infiltrating Ductal Carcinoma,Positive,Positive,Negative,Modified Radical Mastectomy,2019-04-25,2020-04-18,Alive,2,2019
+TCGA-BH-A0H0,69,FEMALE,-.489,2.378,-.467,.097,I,Infiltrating Ductal Carcinoma,Positive,Positive,Negative,Other,2019-05-05,2020-08-08,Alive,1,2019
+TCGA-A8-A09R,82,FEMALE,.660,1.554,-.829,.279,II,Infiltrating Ductal Carcinoma,Positive,Positive,Negative,Other,2019-04-25,2020-01-23,Alive,2,2019
+TCGA-AR-A24H,65,FEMALE,-.002,.814,-.332,-.063,II,Infiltrating Lobular Carcinoma,Positive,Positive,Negative,Other,2019-05-05,2020-04-02,Dead,2,2019
+TCGA-BH-A0DI,63,FEMALE,.050,1.449,-.022,.429,II,Infiltrating Ductal Carcinoma,Positive,Positive,Negative,Modified Radical Mastectomy,2019-05-15,2021-02-03,Alive,2,2019
+TCGA-E2-A1BC,63,FEMALE,-.037,1.091,-.424,-.305,I,Infiltrating Ductal Carcinoma,Positive,Positive,Positive,Simple Mastectomy,2019-05-05,2020-02-26,Alive,1,2019
+TCGA-GI-A2C8,63,FEMALE,.053,.722,-.309,-.531,III,Infiltrating Ductal Carcinoma,Positive,Positive,Negative,Modified Radical Mastectomy,2019-05-15,2019-12-26,Dead,3,2019
+TCGA-AR-A24O,43,FEMALE,.609,1.715,.150,-.274,III,Infiltrating Lobular Carcinoma,Positive,Positive,Positive,Modified Radical Mastectomy,2019-05-25,2020-05-18,Alive,3,2019
+TCGA-BH-A0BC,60,FEMALE,-.731,.466,-.495,-.217,III,Infiltrating Lobular Carcinoma,Positive,Positive,Negative,Other,2019-05-15,2021-03-19,Alive,3,2019
+TCGA-D8-A27V,62,FEMALE,-.384,1.004,-.639,-.545,II,Infiltrating Ductal Carcinoma,Positive,Positive,Negative,Simple Mastectomy,2019-05-25,2019-08-06,Alive,2,2019
+TCGA-EW-A2FV,39,FEMALE,-.148,1.271,.209,-.473,III,Infiltrating Lobular Carcinoma,Positive,Positive,Negative,Modified Radical Mastectomy,2019-06-04,2020-01-29,Alive,3,2019
+TCGA-EW-A1IZ,53,FEMALE,.267,1.677,-.175,.466,III,Infiltrating Ductal Carcinoma,Positive,Positive,Negative,Modified Radical Mastectomy,2019-05-25,2020-02-09,Alive,3,2019
+TCGA-BH-A18N,88,FEMALE,-.603,1.383,.404,.269,II,Infiltrating Ductal Carcinoma,Positive,Positive,Negative,Modified Radical Mastectomy,2019-06-04,1900-01-01,Dead,2,2019
+TCGA-BH-A0HX,54,FEMALE,-1.379,1.661,-.157,-.411,II,Infiltrating Ductal Carcinoma,Positive,Positive,Negative,Simple Mastectomy,2019-06-14,2021-03-04,Alive,2,2019
+TCGA-AC-A5EI,88,FEMALE,-2.341,.372,.208,-1.641,I,Infiltrating Ductal Carcinoma,Positive,Positive,Negative,Simple Mastectomy,2019-06-04,1900-01-01,Unknown,1,2019
+TCGA-A8-A081,80,FEMALE,.671,-.710,.186,.147,II,Infiltrating Lobular Carcinoma,Positive,Positive,Negative,Other,2019-06-14,1900-01-01,Unknown,2,2019
+TCGA-XX-A89A,68,FEMALE,.426,.360,-.346,-.080,II,Infiltrating Ductal Carcinoma,Positive,Positive,Negative,Simple Mastectomy,2019-06-24,2020-02-09,Alive,2,2019
+TCGA-C8-A1HM,74,FEMALE,-.266,1.270,.381,-.007,II,Infiltrating Lobular Carcinoma,Positive,Positive,Negative,Modified Radical Mastectomy,2019-06-14,2019-06-20,Alive,2,2019
+TCGA-A2-A4S2,62,FEMALE,.275,.881,-.514,-.024,III,Infiltrating Ductal Carcinoma,Positive,Positive,Negative,Modified Radical Mastectomy,2019-06-24,2020-01-15,Alive,3,2019
+TCGA-XX-A899,46,FEMALE,.004,1.204,-.414,.529,III,Infiltrating Ductal Carcinoma,Positive,Positive,Negative,Modified Radical Mastectomy,2019-07-04,2020-04-21,Alive,3,2019
+TCGA-A2-A4RY,46,FEMALE,.095,-.415,-.195,.047,III,Infiltrating Ductal Carcinoma,Positive,Positive,Negative,Modified Radical Mastectomy,2019-06-24,2020-03-18,Alive,3,2019
+TCGA-A2-A0YI,62,FEMALE,.066,1.295,.251,-.311,I,Mucinous Carcinoma,Positive,Positive,Negative,Lumpectomy,2019-07-04,2020-06-26,Alive,1,2019
+TCGA-E2-A10C,54,FEMALE,.783,-.841,1.507,.816,II,Infiltrating Lobular Carcinoma,Positive,Positive,Negative,Lumpectomy,2019-07-14,2021-02-22,Alive,2,2019
+TCGA-D8-A13Y,52,FEMALE,-.179,1.529,-.163,.832,I,Infiltrating Ductal Carcinoma,Positive,Positive,Negative,Modified Radical Mastectomy,2019-07-04,2020-03-24,Alive,1,2019
+TCGA-A2-A0CK,60,FEMALE,.253,2.297,.532,.046,III,Infiltrating Ductal Carcinoma,Positive,Positive,Positive,Lumpectomy,2019-07-14,2020-10-12,Alive,3,2019
+TCGA-E2-A15P,61,FEMALE,.188,-.157,-.560,-.600,I,Infiltrating Ductal Carcinoma,Positive,Positive,Negative,Lumpectomy,2019-07-24,2020-06-03,Alive,1,2019
+TCGA-AR-A24R,45,FEMALE,-.001,1.633,.133,-1.452,III,Infiltrating Ductal Carcinoma,Positive,Positive,Negative,Other,2019-07-14,2020-11-01,Alive,3,2019
+TCGA-BH-A5J0,63,FEMALE,.275,2.261,-.007,.568,I,Infiltrating Ductal Carcinoma,Positive,Positive,Negative,Simple Mastectomy,2019-07-24,2020-03-05,Alive,1,2019
+TCGA-A8-A06Q,63,FEMALE,.291,.812,1.069,-.149,III,Infiltrating Ductal Carcinoma,Positive,Positive,Negative,Other,2019-08-03,2019-09-03,Alive,3,2019
+TCGA-A7-A3J1,63,FEMALE,.203,-.043,.775,.620,I,Infiltrating Ductal Carcinoma,Positive,Positive,Negative,Lumpectomy,2019-07-24,2019-10-07,Alive,1,2019
+TCGA-A2-A0YH,53,FEMALE,.287,3.402,-.329,.216,III,Infiltrating Lobular Carcinoma,Positive,Positive,Negative,Lumpectomy,2019-08-03,2020-08-16,Alive,3,2019
+TCGA-A7-A6VX,68,FEMALE,-.055,-.456,.163,-.735,II,Infiltrating Ductal Carcinoma,Positive,Positive,Negative,Lumpectomy,2019-08-13,2020-01-29,Alive,2,2019
+TCGA-A8-A08I,53,FEMALE,-.362,2.657,.308,.204,II,Infiltrating Ductal Carcinoma,Positive,Positive,Negative,Other,2019-08-03,2020-08-02,Alive,2,2019
+TCGA-EW-A2FW,52,FEMALE,.201,2.184,-.656,.811,II,Infiltrating Ductal Carcinoma,Positive,Positive,Negative,Lumpectomy,2019-08-13,2020-02-20,Alive,2,2019
+TCGA-BH-A18J,56,FEMALE,-.675,.269,-.087,1.071,III,Infiltrating Ductal Carcinoma,Positive,Positive,Negative,Modified Radical Mastectomy,2019-08-23,1900-01-01,Unknown,3,2019
+TCGA-AO-A0JC,64,FEMALE,-.244,1.691,-.129,-1.340,II,Infiltrating Lobular Carcinoma,Positive,Positive,Negative,Modified Radical Mastectomy,2019-08-13,2021-01-26,Alive,2,2019
+TCGA-AO-A0J7,71,FEMALE,.687,.369,.783,.943,II,Infiltrating Ductal Carcinoma,Positive,Positive,Negative,Modified Radical Mastectomy,2019-08-23,2020-05-10,Alive,2,2019
+TCGA-BH-A0BZ,59,FEMALE,-.410,.038,.218,-.045,III,Infiltrating Lobular Carcinoma,Positive,Positive,Negative,Modified Radical Mastectomy,2019-09-02,2020-09-28,Alive,3,2019
+TCGA-EW-A423,75,FEMALE,.509,2.706,-.334,.388,II,Infiltrating Lobular Carcinoma,Positive,Positive,Negative,Lumpectomy,2019-08-23,2020-06-27,Alive,2,2019
+TCGA-A2-A04Y,53,FEMALE,-.089,1.033,-.478,-.253,II,Infiltrating Ductal Carcinoma,Positive,Positive,Negative,Simple Mastectomy,2019-09-02,2020-12-10,Alive,2,2019
+TCGA-A2-A0T6,50,FEMALE,-.326,1.990,-.038,.253,II,Infiltrating Ductal Carcinoma,Positive,Positive,Negative,Simple Mastectomy,2019-09-12,2020-08-21,Alive,2,2019
+TCGA-A8-A06Y,66,FEMALE,-1.344,1.128,-.229,-.230,II,Infiltrating Ductal Carcinoma,Positive,Positive,Negative,Other,2019-09-02,2021-01-10,Alive,2,2019
+TCGA-AR-A2LN,65,FEMALE,-.091,.055,.035,-.589,II,Infiltrating Ductal Carcinoma,Positive,Positive,Negative,Other,2019-09-12,2021-02-13,Alive,2,2019
+TCGA-LD-A66U,44,FEMALE,.892,.444,.110,.157,II,Infiltrating Ductal Carcinoma,Positive,Positive,Negative,Modified Radical Mastectomy,2019-09-22,2020-05-31,Alive,2,2019
+TCGA-E2-A156,61,FEMALE,-.406,2.751,-.595,.816,I,Infiltrating Ductal Carcinoma,Positive,Positive,Negative,Lumpectomy,2019-09-12,2021-01-05,Alive,1,2019
+TCGA-AO-A0JJ,54,FEMALE,-1.231,-.768,.862,.239,II,Infiltrating Lobular Carcinoma,Positive,Positive,Negative,Modified Radical Mastectomy,2019-09-22,2021-02-15,Alive,2,2019
+TCGA-E2-A14Z,64,FEMALE,.976,2.485,-.513,.667,I,Infiltrating Ductal Carcinoma,Positive,Positive,Negative,Lumpectomy,2019-10-02,2021-02-03,Alive,1,2019
+TCGA-A2-A0SU,66,FEMALE,-.370,1.919,-.796,-.063,II,Infiltrating Lobular Carcinoma,Positive,Positive,Negative,Simple Mastectomy,2019-09-22,2020-09-08,Alive,2,2019
+TCGA-A7-A13G,79,FEMALE,-1.062,1.166,-.656,-.092,II,Infiltrating Lobular Carcinoma,Positive,Positive,Negative,Simple Mastectomy,2019-10-02,2020-04-27,Alive,2,2019
+TCGA-BH-A0BR,59,FEMALE,.452,1.396,-.231,.796,I,Infiltrating Lobular Carcinoma,Positive,Positive,Negative,Other,2019-10-12,2021-01-19,Alive,1,2019
+TCGA-A8-A083,67,FEMALE,.317,-.556,.357,.797,II,Infiltrating Ductal Carcinoma,Positive,Positive,Negative,Other,2019-10-02,1900-01-01,Unknown,2,2019
+TCGA-BH-A0HU,52,FEMALE,.241,1.735,.331,1.044,I,Infiltrating Ductal Carcinoma,Positive,Positive,Negative,Other,2019-10-12,2020-11-07,Alive,1,2019
+TCGA-AO-A1KP,77,FEMALE,.339,1.319,.587,.352,II,Infiltrating Ductal Carcinoma,Positive,Positive,Negative,Simple Mastectomy,2019-10-22,2021-02-09,Alive,2,2019
+TCGA-AR-A2LQ,59,FEMALE,.151,1.267,.643,.261,II,Infiltrating Ductal Carcinoma,Positive,Positive,Negative,Simple Mastectomy,2019-10-12,2021-02-01,Alive,2,2019
+TCGA-BH-A0BV,78,FEMALE,-.917,-.647,.553,.459,II,Infiltrating Lobular Carcinoma,Positive,Positive,Negative,Modified Radical Mastectomy,2019-10-22,2021-03-24,Alive,2,2019
+TCGA-AO-A1KO,46,FEMALE,-.740,-.738,.720,.722,II,Infiltrating Ductal Carcinoma,Positive,Positive,Negative,Simple Mastectomy,2019-11-01,2021-01-22,Alive,2,2019
+TCGA-E2-A1B5,46,FEMALE,-.055,-.506,.888,-.089,II,Infiltrating Ductal Carcinoma,Positive,Positive,Negative,Lumpectomy,2019-10-22,2021-02-09,Dead,2,2019
+TCGA-AR-A1AL,60,FEMALE,.095,1.000,-.226,.049,III,Infiltrating Ductal Carcinoma,Positive,Positive,Negative,Simple Mastectomy,2019-11-01,2021-02-28,Dead,3,2019
+TCGA-AN-A04A,36,FEMALE,.232,.618,-.558,-.517,III,Infiltrating Ductal Carcinoma,Positive,Positive,Positive,Simple Mastectomy,2019-11-11,2020-02-09,Dead,3,2019
+TCGA-A8-A085,44,MALE,.733,1.112,-.270,-.355,II,Infiltrating Lobular Carcinoma,Positive,Positive,Negative,Other,2019-11-01,2020-03-04,Dead,2,2019
+TCGA-A1-A0SG,61,FEMALE,-.719,2.549,-.150,.340,II,Infiltrating Ductal Carcinoma,Positive,Positive,Negative,Lumpectomy,2019-11-11,2021-01-18,Dead,2,2019
+TCGA-A2-A0EU,79,FEMALE,.479,2.056,-.531,-.188,I,Infiltrating Ductal Carcinoma,Positive,Positive,Positive,Lumpectomy,2019-11-21,2021-02-19,Dead,1,2019
+TCGA-B6-A40B,76,FEMALE,-.244,.926,-.418,-.068,I,Infiltrating Ductal Carcinoma,Positive,Positive,Negative,Lumpectomy,2019-11-11,2021-01-05,Dead,1,2019
