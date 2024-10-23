@@ -1,0 +1,46 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  html, body {
+    height: 100%;
+    width: 100%;
+  }
+body{
+    background-color: rgb(242,242,242);
+}
+#cor{
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+#chooseX:hover {
+    background-color: #6200ff;  /* Light pink on hover */
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);  /* Darker shadow on hover */
+    cursor: pointer;  /* Pointer cursor on hover */
+}
+.Select-placeholder {
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #3b3f43; 
+    font-size:large ; 
+}
+
+/* Change the color of the selected value text */
+.Select-value {
+    color: white;
+    text-align: center;  /* Ensures the selected option has white text */
+}
+
+/* Styling the dropdown control background */
+.Select-control {
+    background-color: rgb(255, 255, 255);  /* Dropdown control background */
+    border: none;
+}
+
+/* Change the color of the options in the dropdown */
+.Select-menu-outer {
+    color: #3b3f43;  /* Dropdown options text color */
+    background-color:rgb(255, 255, 255);
+}
